@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="digitaltrinity.bikechainapplication.TitleFragment"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_title"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/userName"
+        android:layout_marginBottom="100dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userName"
+        android:width="280dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:layout_above="@+id/clickable"
+        android:hint="Enter full name used in waitlist" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search in waitlist"
+        android:id="@+id/clickable"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:onClick="emptyStuff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/error"
+        android:layout_below="@+id/clickable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+</RelativeLayout>

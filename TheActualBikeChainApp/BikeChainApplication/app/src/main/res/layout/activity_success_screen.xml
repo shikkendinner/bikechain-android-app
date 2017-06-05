@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.shikkendinner.googledriveapi.SuccessScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Wait"
+        android:id="@+id/userCounter"
+        android:height="200dp"
+        android:width="300dp"
+        android:gravity="center"
+        android:textSize="80sp"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="while we search the waitlist..."
+        android:id="@+id/descriptionForError"
+        android:layout_below="@+id/userCounter"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Name"
+        android:id="@+id/nameChange"
+        android:layout_marginTop="89dp"
+        android:layout_below="@+id/descriptionForError"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeName" />
+</RelativeLayout>
